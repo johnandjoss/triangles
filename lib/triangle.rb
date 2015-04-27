@@ -42,4 +42,15 @@ class Triangle
       false
     end
   end
+  define_method(:not_triangle?) do
+    if @side1 >= @side2.+(@side3)
+    true
+    elsif @side2 >= @side3.+(@side1)
+    true
+    elsif @side3 >= @side1.+(@side2)
+      true
+    else
+      false
+    end  
+end
 end

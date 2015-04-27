@@ -20,4 +20,10 @@ describe(Triangle) do
     expect(test_triangle.scalene?()).to(eq(true))
     end
   end
+  describe('#not_triangle?') do
+    it ('returns true if 1 side is >= 2 other sides combined') do
+    test_triangle = Triangle.new(1,6,6)
+    expect(test_triangle.not_triangle?()).to(eq(true))
+    end
+  end
 end
