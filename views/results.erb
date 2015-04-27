@@ -4,8 +4,8 @@
 <h5> It is an equilateral triangle!</h5>
 <% elsif @triangle.isosceles?() %>
 <h5> It is an isosceles triangle!</h5>
-<% elsif @triangle.scalene?() %>
-<h5> It is a scalene triangle!</h5>
 <% elsif @triangle.not_triangle?() %>
 <h5> It is not a triangle!</h5>
+<% elsif @triangle.scalene?() %>
+<h5> It is a scalene triangle!</h5>
 <% end %>
