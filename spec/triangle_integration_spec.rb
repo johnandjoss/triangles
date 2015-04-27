@@ -10,6 +10,6 @@ describe('path to triangle type', {:type => :feature}) do
     fill_in('side2', :with => '3')
     fill_in('side3', :with => '3')
     click_button('Send lengths!')
-    expect(page).to have_content('It is a')
+    expect(page).to have_content('It is')
   end
 end

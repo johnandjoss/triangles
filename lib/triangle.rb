@@ -4,7 +4,6 @@ class Triangle
     @side2 = side2
     @side3 = side3
   end
-
   define_method(:equilateral?) do
     if @side1 == @side2 && @side2 == @side3 && @side3 == @side1
       true
@@ -44,13 +43,13 @@ class Triangle
   end
   define_method(:not_triangle?) do
     if @side1 >= @side2.+(@side3)
-    true
+      true
     elsif @side2 >= @side3.+(@side1)
-    true
-    elsif @side3 >= @side1.+(@side2)
+      true
+  elsif @side3 >= @side1.+(@side2)
       true
     else
       false
-    end  
-end
+    end
+  end
 end

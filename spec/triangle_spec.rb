@@ -22,7 +22,7 @@ describe(Triangle) do
   end
   describe('#not_triangle?') do
     it ('returns true if 1 side is >= 2 other sides combined') do
-    test_triangle = Triangle.new(1,6,6)
+    test_triangle = Triangle.new(1,4,6)
     expect(test_triangle.not_triangle?()).to(eq(true))
     end
   end
